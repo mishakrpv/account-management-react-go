@@ -1,0 +1,25 @@
+.page-content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
+.drop {
+  margin: 0 20px 0 20px;
+  font-size: 50px;
+  animation: dropIn 3s ease infinite;
+  animation-delay: calc(var(--order) * 100ms);
+}
+@keyframes dropIn {
+  0% {
+    transform: translateY(-250px);
+  }
+  50% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(-250px);
+  }
+}
