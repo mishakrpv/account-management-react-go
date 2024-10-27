@@ -1,6 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 31px;
+  font-family: var(--font-family-primary);
+  font-size: 15px;
   font-weight: 500;
 
   color-scheme: light;
@@ -10,7 +10,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 
+  --font-family-primary: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --color-border: #0000001a;
+  --color-button-nav-hover: #0000000a;
+  --color-button-primary-hover: #333;
+}
+
+@font-face {
+  font-family: inter-var;
+  src: url(https://www.notion.so/_next/static/media/Inter-Var.730e8169.woff2);
 }
 
 * {

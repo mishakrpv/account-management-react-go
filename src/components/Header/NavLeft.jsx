@@ -2,7 +2,9 @@ function NavLeft() {
   return (
     <ul className="navbar__nav-list">
       <li className="navbar__nav-item">
-        <button type="button">Product</button>
+        <button type="button" className="navbar__nav-btn">
+          <div className="navbar__nav-label"><span>Product</span></div>
+        </button>
       </li>
     </ul>
   );
