@@ -2,7 +2,7 @@ import "./Welcome.jsx.css";
 
 function Welcome() {
   return (
-    <div className="drop-wrap">
+    <div className="welcome-page-placeholder">
       <i className="drop" style={{ "--order": 1 }}>
         🙈
       </i>

@@ -1,25 +1,25 @@
-.drop-wrap {
+.welcome-page-placeholder {
   display: flex;
-  justify-content: center;
   position: absolute;
+  top: 50%;
   left: 50%;
-  right: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .drop {
   margin: 0 20px 0 20px;
   font-size: 50px;
-  animation: dropIn 3s ease infinite;
+  animation: dropIn 2s ease infinite;
   animation-delay: calc(var(--order) * 100ms);
 }
 @keyframes dropIn {
   0% {
-    transform: translateY(-250px);
+    transform: translateY(-200px);
   }
   50% {
-    transform: translateY(250px);
+    transform: translateY(200px);
   }
   100% {
-    transform: translateY(-250px);
+    transform: translateY(-200px);
   }
 }

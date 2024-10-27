@@ -1,15 +1,17 @@
 import "./Header.jsx.css";
-import DesktopNav from "./DesktopNav";
+import NavLeft from "./NavLeft";
+import NavRight from "./NavRight";
 
 function Header() {
   return (
     <header className="header">
-      <div className="headher__inner">
-        <div className="header__logo-wrap"></div>
-        <div className="header__desktop-actions">
-          <DesktopNav />
-        </div>
-      </div>
+      <a className="header__logo" href="/">
+        <img src="https://placehold.co/91x26"></img>
+      </a>
+      <nav className="header__navbar">
+        <NavLeft />
+        <NavRight />
+      </nav>
     </header>
   );
 }

@@ -3,10 +3,12 @@ import Welcome from "./components/Welcome/Welcome.jsx";
 
 function App() {
   return (
-    <>
+    <div style={{"display": "contents"}}>
       <Header />
-      {/* <Welcome /> */}
-    </>
+      <div className="page-content">
+        <Welcome />
+      </div>
+    </div>
   );
 }
 
