@@ -9,17 +9,17 @@
 .drop {
   margin: 0 20px 0 20px;
   font-size: 50px;
-  animation: dropIn 2s ease infinite;
+  animation: dropIn 1.5s ease infinite;
   animation-delay: calc(var(--order) * 100ms);
 }
 @keyframes dropIn {
   0% {
-    transform: translateY(-200px);
+    transform: translateY(-100px);
   }
   50% {
-    transform: translateY(200px);
+    transform: translateY(100px);
   }
   100% {
-    transform: translateY(-200px);
+    transform: translateY(-100px);
   }
 }

@@ -6,7 +6,8 @@ function App() {
     <div style={{"display": "contents"}}>
       <Header />
       <div className="page-content">
-        <Welcome />
+        {/* <Welcome /> */}
+        
       </div>
     </div>
   );
