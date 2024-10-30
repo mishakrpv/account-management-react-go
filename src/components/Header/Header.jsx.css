@@ -8,8 +8,7 @@
   align-items: center;
 }
 
-.header .sticky {
-  border-bottom: 1px solid var(--color-border);
+.header.header_isScrolled {
 }
 
 .header__logo {
@@ -34,7 +33,6 @@
 .navbar__nav-btn {
   display: block;
   border-radius: 5px;
-  text-decoration: none;
   background: none;
   border: 0;
   text-align: inherit;
@@ -56,6 +54,10 @@
   transition: none;
 }
 
+.navbar__nav-btn:focus:not(:focus-visible) {
+  outline: 0;
+}
+
 .navbar__nav-item_has-menu .navbar__nav-label {
   padding-right: 26px;
 }
@@ -67,7 +69,7 @@
   line-height: 31px;
 }
 
-.navbar__nav-label span {
+.navbar__nav-label {
   font-family: var(--font-family-primary);
   font-size: 15px;
   font-weight: 500;
@@ -109,6 +111,12 @@
   background: var(--color-button-primary-active);
 }
 
-.navbar__nav-btn:focus:not(:focus-visible) {
-  outline: 0;
+.navbar__account-btn {
+  display: flex;
+  cursor: pointer;
+}
+
+.navbar__account-img {
+  height: 30px;
+  border-radius: 50%;
 }

@@ -3,7 +3,7 @@ function NavLeft() {
     <ul className="navbar__nav-list">
       <li className="navbar__nav-item">
         <button type="button" className="navbar__nav-btn">
-          <div className="navbar__nav-label"><span>Product</span></div>
+          <div className="navbar__nav-label">Product</div>
         </button>
       </li>
     </ul>
