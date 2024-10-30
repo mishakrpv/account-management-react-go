@@ -8,7 +8,20 @@
   align-items: center;
 }
 
-.header.header_isScrolled {
+.header.is_scrolled::after {
+  opacity: 1;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 1px;
+  background: var(--color-border);
+  opacity: 0;
+  transition: opacity .2s;
 }
 
 .header__logo {

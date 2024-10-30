@@ -22,7 +22,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={`header ${isScrolled ? "header_isScrolled" : ""}`}>
+    <header className={`header ${isScrolled ? "is_scrolled" : ""}`}>
       <a className="header__logo" href="/">
         <img src="https://placehold.co/91x26"></img>
       </a>
