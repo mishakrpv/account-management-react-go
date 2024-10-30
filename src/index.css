@@ -12,8 +12,10 @@
 
   --font-family-primary: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --color-border: #0000001a;
-  --color-button-nav-hover: #0000000a;
+  --color-alpha-hover: #0000000a;
+  --color-alpha-active: #0000000f;
   --color-button-primary-hover: #333;
+  --color-button-primary-active: #404040;
 }
 
 @font-face {

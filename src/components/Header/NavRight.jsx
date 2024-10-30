@@ -3,7 +3,7 @@ function NavRight() {
     <div className="navbar-right">
       <ul className="navbar__nav-list">
         <li className="navbar__nav-item">
-          <a className="navbar__nav-btn">
+          <a tabIndex="0" className="navbar__nav-btn">
             <div className="navbar__nav-label">Console</div>
           </a>
         </li>
@@ -11,7 +11,7 @@ function NavRight() {
       <div className="navbar-right__divider"></div>
       <ul className="navbar__nav-list">
         <li className="navbar__nav-item">
-          <a className="navbar__nav-btn">
+          <a tabIndex="0" className="navbar__nav-btn">
             <div className="navbar__nav-label">Log in</div>
           </a>
         </li>

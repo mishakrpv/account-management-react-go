@@ -1,5 +1,10 @@
 import "./LogIn.jsx.css";
 
-function LogIn() {}
+function LogIn() {
+    return (
+        <>
+        </>
+    );
+}
 
 export default LogIn;

@@ -7,7 +7,6 @@ function App() {
       <Header />
       <div className="page-content">
         {/* <Welcome /> */}
-        
       </div>
     </div>
   );
