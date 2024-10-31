@@ -26,8 +26,14 @@
   src: url(https://www.notion.so/_next/static/media/Inter-Var.730e8169.woff2);
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
 }
 
 body {
@@ -50,4 +56,12 @@ a {
 
 #root div .page-content {
   height: 100vh;
+}
+
+.app-link-blue:focus {
+  outline: 0;
+}
+
+.app-link-blue:hover {
+  color: #2383e2 !important;
 }

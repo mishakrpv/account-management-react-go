@@ -1,0 +1,127 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+.auth__main {
+  color: rgb(4, 4, 4);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  background: rgb(255, 254, 252);
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+.auth__main_inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.auth__section {
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  margin: 0px auto;
+  overflow: visible;
+}
+
+.auth__m_title {
+  font-size: 50px;
+  margin-top: 10vh;
+  font-weight: 700;
+  margin-bottom: 23px;
+  text-align: center;
+  line-height: 1.1;
+  max-width: 380px;
+}
+
+.auth__title_label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.264px;
+  line-height: 26px;
+  width: 320px;
+}
+
+.app_name-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin-bottom: 16vh;
+}
+
+.privacy_remark {
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(120, 119, 116);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.horizontal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+  height: 41px;
+  flex: 0 0 auto;
+}
+
+.continue-with-btn {
+  user-select: none;
+  transition: background 20ms ease-in;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  height: 36px;
+  border-radius: 6px;
+  color: rgb(29, 27, 22);
+  fill: rgb(29, 27, 22);
+  background: none;
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  border: 1px solid rgb(227, 226, 224);
+  width: 100%;
+  box-shadow: none;
+  margin-top: 8px;
+}
+
+.continue-with-btn:active:hover {
+  background: rgba(55, 53, 47, 0.16);
+}
+
+.continue-with-btn:active {
+  background: rgba(55, 53, 47, 0.06);
+}
+
+.auth__form {
+}
