@@ -8,11 +8,11 @@ export default function Auth() {
       <main className="auth__main">
         <div className="auth__main_inner">
           <section className="auth__section">
-            <div style={{ width: "100%", "border-radius": "4px" }}>
+            <div style={{ width: "100%", borderRadius: "4px" }}>
               <div
                 style={{
                   width: "100%",
-                  "max-width": "1260px",
+                  maxWidth: "1260px",
                   margin: "0px auto",
                 }}
               >

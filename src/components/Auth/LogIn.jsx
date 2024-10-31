@@ -2,11 +2,12 @@ import { GoogleLogo } from "../../assets/googleLogo";
 import UserAgreement from "./UserAgreement";
 
 export default function LogIn() {
+  const handleLogIn = () => {};
   return (
     <div
       style={{
         display: "flex",
-        "flex-direction": "column",
+        flexDirection: "column",
         alignItems: "center",
       }}
     >
@@ -29,6 +30,7 @@ export default function LogIn() {
                 role="button"
                 tabIndex={0}
                 className="continue-with-btn"
+                onClick={handleLogIn}
               >
                 <div
                   style={{
