@@ -1,5 +1,5 @@
 import "./Auth.jsx.css";
-import LogIn from "./LogIn";
+import { Outlet } from "react-router-dom";
 
 export default function Auth() {
   return (
@@ -16,7 +16,7 @@ export default function Auth() {
                   margin: "0px auto",
                 }}
               >
-                <LogIn />
+                <Outlet />
               </div>
             </div>
           </section>

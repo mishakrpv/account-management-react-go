@@ -35,12 +35,12 @@ function NavRight({ profilePictureUrl, isLoggedIn }) {
       <div className="navbar-right__divider"></div>
       <ul className="navbar__nav-list">
         <li className="navbar__nav-item">
-          <a tabIndex="0" className="navbar__nav-btn" href="/">
+          <a tabIndex="0" className="navbar__nav-btn" href="/auth/login">
             <div className="navbar__nav-label">Log in</div>
           </a>
         </li>
         <li className="navbar__signup-item">
-          <a tabIndex="0" className="navbar__signup-btn" href="/">
+          <a tabIndex="0" className="navbar__signup-btn" href="/auth/signup">
             Start free trial
           </a>
         </li>
