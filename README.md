@@ -1,6 +1,6 @@
 # Account Management with React.js and Go
 
-> Client-server account management implementation in terms of practice
+Client-server account management system
 
 ## React + Vite
 
