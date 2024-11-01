@@ -9,6 +9,7 @@ import (
 
 	_ "github.com/joho/godotenv/autoload"
 
+	"am-react-go/api/internal/auth"
 	"am-react-go/api/internal/database"
 )
 
@@ -25,6 +26,8 @@ func NewServer() *http.Server {
 
 		db: database.New(),
 	}
+
+	auth.AddAuthentication()
 
 	// Declare Server config
 	server := &http.Server{
