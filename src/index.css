@@ -47,6 +47,10 @@ a {
   text-decoration: none;
 }
 
+input:focus-visible {
+  outline-width: 0;
+}
+
 @media (prefers-color-scheme: light) {
 }
 

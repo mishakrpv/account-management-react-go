@@ -2,7 +2,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import ErrorPage from "./pages/error.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Auth from "./components/Auth/Auth.jsx";
 import LogIn from "./components/Auth/LogIn.jsx";
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -35,6 +33,10 @@ const router = createBrowserRouter([
           },
         ],
       },
+      // {
+      //   path: "profile/:userName",
+      //   element: <Profile />
+      // },
     ],
   },
 ]);

@@ -1,8 +1,10 @@
 import { GoogleLogo } from "../../assets/googleLogo";
+import { GitHubLogo } from "../../assets/gitHubLogo";
+import { TwitterLogo } from "../../assets/twitterLogo";
 import UserAgreement from "./UserAgreement";
 
 export default function LogIn() {
-  const handleLogIn = () => {};
+  const handleContinueWith = () => {};
   return (
     <div
       style={{
@@ -30,7 +32,7 @@ export default function LogIn() {
                 role="button"
                 tabIndex={0}
                 className="continue-with-btn"
-                onClick={handleLogIn}
+                onClick={handleContinueWith}
               >
                 <div
                   style={{
@@ -53,6 +55,56 @@ export default function LogIn() {
                   Continue with Google
                 </div>
               </div>
+              <div
+                aria-disabled="false"
+                role="button"
+                tabIndex={0}
+                className="continue-with-btn"
+                onClick={handleContinueWith}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <GitHubLogo
+                    style={{
+                      width: "14px",
+                      height: "14px",
+                      marginRight: "6px",
+                    }}
+                  />
+                  Continue with GitHub
+                </div>
+              </div>
+              <div
+                aria-disabled="false"
+                role="button"
+                tabIndex={0}
+                className="continue-with-btn"
+                onClick={handleContinueWith}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <TwitterLogo
+                    style={{
+                      width: "14px",
+                      height: "14px",
+                      marginRight: "6px",
+                    }}
+                  />
+                  Continue with Twitter
+                </div>
+              </div>
             </div>
           </div>
           <div className="horizontal-divider">
@@ -67,7 +119,57 @@ export default function LogIn() {
             ></div>
           </div>
           <div>
-            <form className="auth__form"></form>
+            <form className="auth__form">
+              <label className="auth__label">Email</label>
+              <div className="focusable-within auth__email-input_wrapper">
+                <input
+                  placeholder="Enter your email address..."
+                  autoComplete="username"
+                  type="email"
+                  aria-label="Enter your email address..."
+                  className="auth__input"
+                ></input>
+              </div>
+              <div
+                style={{
+                  color: "rgb(172, 171, 169)",
+                  fontSize: "12px",
+                  lineHeight: "16px",
+                  marginTop: "6px",
+                  marginBottom: "18px",
+                  textAlign: "left",
+                  display: "flex",
+                }}
+              >
+                Use an organization email to easily collaborate with teammates
+              </div>
+              <div className="focusable-within auth__pwd-input_wrapper">
+                <input
+                  autoComplete="current-password"
+                  type="password"
+                  tabIndex={-1}
+                  aria-hidden="true"
+                  className="auth__input"
+                ></input>
+              </div>
+              <div
+                aria-disabled="false"
+                role="button"
+                tabIndex={0}
+                className="continue-btn"
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textAlign: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Continue
+                </div>
+              </div>
+            </form>
           </div>
         </div>
         <UserAgreement />
